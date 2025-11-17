@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 오디오 분류기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>🎤 실시간 오디오 분류</h1>
+        <p>버튼을 누르고 마이크 사용을 허용하세요.</p>
+        
+        <button id="start-button">분석 시작</button>
+        
+        <div id="emoji-display">❓</div>
+        <div id="status-text">대기 중...</div>
+        
+        <h2>📊 분류 확률</h2>
+        <div id="probability-table">
+            </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/audio@latest/dist/teachablemachine-audio.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
